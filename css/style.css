@@ -1,0 +1,292 @@
+/*
+Project Name: Registration Form
+Theme URI: https://edgardo.tupino.com
+Version: 1.0.0
+Description: Project for Treehouse Techdegree 
+Author: EdgardoT.
+Author URI: http://edgardo.tupino.com
+Tags: Registration Form
+*/
+/*----------------- START CUSTOM STYLES HERE -------------------------------*/
+/* ===================
+ * IMPORT COMPONENTS
+ * ===================
+ */
+body {
+  font-family: 'Nunito', sans-serif !important;
+  background-image: url("../assets/images/leaves.png");
+  background-size: 35%;
+  background-repeat: repeat;
+}
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  padding: 0 1.2rem;
+}
+.codeReview-description {
+  text-align: center;
+  border-bottom: solid 4px;
+  -webkit-box-shadow: 0 4px 0 1px #fff, 0 6px 0 0 #000;
+          box-shadow: 0 4px 0 1px #fff, 0 6px 0 0 #000;
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+footer {
+  padding: 0 1.2rem;
+  text-align: center;
+  margin-bottom: 50%;
+}
+footer p {
+  font-style: italic;
+}
+@media only screen and (min-width: 768px) {
+  footer {
+    margin-bottom: 10%;
+  }
+}
+.codeReview-description h2 {
+  font-size: 1.4rem;
+}
+.codeReview-description p {
+  color: #9e9e9e;
+}
+.codeReview-contactInformation {
+  border-bottom: solid 0.1rem;
+  padding-bottom: 1.05rem;
+}
+.group-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 10px 0 15px 0;
+}
+.group-field .box-input,
+.group-field .box-select {
+  width: 100%;
+}
+.group-field .box-zip_code {
+  width: 100%;
+}
+.group-field label {
+  width: 100%;
+  margin-bottom: 0.55rem;
+}
+.group-field input {
+  width: 100%;
+}
+.group-field select {
+  width: 100%;
+}
+.group-field textarea {
+  width: 100%;
+  border-radius: 5px;
+  background: #e9e9e9;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: solid #e9e9e9;
+}
+.group-field .submit {
+  background: #4ebbb5;
+  color: #fff;
+  padding: 1.5em;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.group-field .submit:hover {
+  opacity: 0.7;
+}
+.field-textarea {
+  margin-top: 15%;
+}
+.item-form {
+  border-radius: 5px;
+  height: 45px;
+  background: #e9e9e9;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: solid #e9e9e9;
+  padding: 0 15px;
+}
+.item-form::-webkit-input-placeholder {
+  text-align: right;
+  padding-right: 1rem;
+  font-style: italic;
+  font-size: 0.95rem;
+}
+.item-form:-ms-input-placeholder {
+  text-align: right;
+  padding-right: 1rem;
+  font-style: italic;
+  font-size: 0.95rem;
+}
+.item-form::-ms-input-placeholder {
+  text-align: right;
+  padding-right: 1rem;
+  font-style: italic;
+  font-size: 0.95rem;
+}
+.item-form::placeholder {
+  text-align: right;
+  padding-right: 1rem;
+  font-style: italic;
+  font-size: 0.95rem;
+}
+.item-form:focus {
+  -webkit-box-shadow: 5px 7px 13px 0px #6d6d6d;
+          box-shadow: 5px 7px 13px 0px #6d6d6d;
+  -webkit-transition: ease 0.2s;
+  -o-transition: ease 0.2s;
+  transition: ease 0.2s;
+  outline: none;
+  background-color: #dbefe0;
+  -webkit-transition: ease 0.5s;
+  -o-transition: ease 0.5s;
+  transition: ease 0.5s;
+}
+.item-half {
+  width: 35% !important;
+  padding: 0 15px;
+}
+.item-select {
+  border-radius: 5px;
+  height: 45px;
+  background: #e9e9e9;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: solid #e9e9e9;
+}
+@media only screen and (min-width: 768px) {
+  .codeReview-contactInformation .group-field {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .codeReview-contactInformation .group-field .box-input {
+    width: 75%;
+  }
+  .codeReview-contactInformation .group-field .box-select {
+    width: 75%;
+  }
+  .codeReview-contactInformation .group-field .box-zip_code {
+    width: 80%;
+  }
+  .codeReview-contactInformation .group-field label {
+    width: 23%;
+  }
+  .item-form {
+    width: 75% !important;
+  }
+  .item-select {
+    width: 80% !important;
+  }
+  .item-half {
+    width: 35% !important;
+  }
+  .field-textarea {
+    margin-top: 5%;
+  }
+  .field-textarea label {
+    width: 100%;
+  }
+}
+.controler {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.controler input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.controler_item {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background: #e6e6e6;
+  border-radius: 5px;
+}
+.controler--radio .controler_item {
+  border-radius: 50%;
+}
+.controler:hover input ~ .controler_item,
+.controler input:focus ~ .controler_item {
+  background: #ccc;
+}
+.controler input:checked ~ .controler_item {
+  background: #2aa1c0 !important;
+}
+.controler:hover input:not([disabled]):checked ~ .controler_item,
+.controler input:checked:focus ~ .controler_item {
+  background: #0e647d;
+}
+.controler input:disabled ~ .controler_item {
+  background: #e6e6e6;
+  opacity: 0.6;
+  pointer-events: none;
+}
+:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+.controler input:checked ~ :after {
+  display: block;
+}
+.controler--checkbox :after {
+  left: 8px;
+  top: 4px;
+  width: 3px;
+  height: 8px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.controler--checkbox input:disabled ~ :after {
+  border-color: #7b7b7b;
+}
+.controler--radio :after {
+  left: 7px;
+  top: 7px;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background: #fff;
+}
+.controler--radio input:disabled ~ :after {
+  background: #7b7b7b;
+}
+#header {
+  background: #2d3945;
+}
+#header h1 {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 1.3em;
+  color: #fff;
+  margin: 0;
+  padding: 1.5rem;
+  text-align: center;
+}
