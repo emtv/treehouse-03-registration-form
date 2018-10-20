@@ -32,9 +32,12 @@ fieldset {
   -webkit-box-shadow: 0 4px 0 1px #fff, 0 6px 0 0 #000;
           box-shadow: 0 4px 0 1px #fff, 0 6px 0 0 #000;
 }
+.codeReview-section {
+  padding: 0 2.5%;
+}
 @media only screen and (min-width: 768px) {
   .container {
-    max-width: 700px;
+    max-width: 800px;
     width: 100%;
     margin: 0 auto;
   }
@@ -61,6 +64,7 @@ footer p {
 .codeReview-contactInformation {
   border-bottom: solid 0.1rem;
   padding-bottom: 1.05rem;
+  background-color: rgba(93,116,107,0.38);
 }
 .group-field {
   display: -webkit-box;

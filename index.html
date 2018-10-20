@@ -17,49 +17,49 @@
     </header>
     <div class="main container">
       <form action="thanksyou.html" method="GET">
-        <div class="codeReview-description">
+        <div class="codeReview-description codeReview-section">
           <h2>Signup for our newsletter</h2>
           <p>Get the lastest news on how your code is doing right in your inbox</p>
         </div>
-        <fieldset class="codeReview-contactInformation">
+        <fieldset class="codeReview-contactInformation codeReview-section">
           <legend> 
             <h2>Contact Information</h2>
           </legend>
           <div class="group-field">
             <label for="fullName">Full Name</label>
-            <input class="item-form" id="fullName" type="text" placeholder="Required" autocomplete="off" required>
+            <input class="item-form" id="fullName" type="text" name="fullName" placeholder="Required" autocomplete="off" required>
           </div>
           <div class="group-field">
             <label for="email">Email Address</label>
-            <input class="item-form" id="email" type="email" placeholder="Required" autocomplete="off" required>
+            <input class="item-form" id="email" type="email" name="email" placeholder="Required" autocomplete="off" required>
           </div>
           <div class="group-field">
             <label for="phone">Phone Number</label>
-            <input class="item-form" id="phone" type="tel" autocomplete="off" required>
+            <input class="item-form" id="phone" type="tel" name="phone" placeholder="( _code_ ) ( _you phone_ ) " autocomplete="off" required>
           </div>
           <div class="group-field">
             <label for="address">Street Address</label>
-            <input class="item-form" id="address" type="text" autocomplete="off">
+            <input class="item-form" id="address" type="text" name="address" placeholder="Complete Address" autocomplete="off">
           </div>
           <div class="group-field">
             <label for="city">City</label>
-            <input class="item-form" id="city" type="text" autocomplete="off" required>
+            <input class="item-form" id="city" type="text" name="city" autocomplete="off" required>
           </div>
           <div class="group-field">
             <label for="state">State</label>
-            <select class="item-select" id="state" name="State">
+            <select class="item-select" id="state" name="state">
               <option value="Lima">Lima</option>
               <option value="Arequipa">Arequipa</option>
             </select>
           </div>
           <div class="group-field">
-            <label for="zipCode">Zip Code</label>
+            <label for="zipcode">Zip Code</label>
             <div class="box-zip_code">
-              <input class="item-form item-half" id="zipCode" type="number" autocomplete="off">
+              <input class="item-form item-half" id="zipcode" type="number" name="zipcode" autocomplete="off">
             </div>
           </div>
         </fieldset>
-        <fieldset class="codeReview-Newsletter">
+        <fieldset class="codeReview-Newsletter codeReview-section">
           <legend>
             <h2>Newsletter</h2>
           </legend>
@@ -97,7 +97,7 @@
             <textarea id="textarea" name="textarea" rows="8"></textarea>
           </div>
         </fieldset>
-        <div class="codeReview-submit">
+        <div class="codeReview-submit codeReview-section">
           <div class="group-field">
             <input class="submit" type="submit" value="Sign Up">
           </div>
